@@ -1,0 +1,149 @@
+.bloque__agregar-producto {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.agregar-producto {
+    height: auto;
+    min-height: 400px;
+    padding: 0.5rem 3vw 2rem;
+}
+
+.agregar-producto__img-container {
+    margin: 1rem 0 1rem;
+    display: block;
+}
+
+.img-container__box-image {
+    width: 100%;
+    border: 1px dashed var(--texto-gris-mas-claro);
+    height: 150px;
+    position: relative;
+    background-color: var(--bg-blanco);
+    /* align-content: center; */
+}
+
+.img-container__box-image:hover {
+    cursor: pointer;
+}
+
+.agregar-producto__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.box-image__imagen-fondo {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.box-image__imagen-fondo--invisible {
+    visibility: hidden;
+} 
+
+.box-image__icono {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+    
+    background-image: url(../img/signo-mas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-image__texto {
+    position: absolute;
+    color: var(--texto-gris-mas-claro);
+    font-weight: 400;
+    font-size: 14px;
+    top: 70%;
+    left: calc(50% - 120px);
+    z-index: 1;
+    text-align: center;
+}
+
+.box-image__texto--movil {
+    display: block;
+}
+
+.box-image__texto--tablet {
+    padding: 0 2rem;
+    display: none;
+}
+
+.img-container__or {
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+
+.img-container__boton {
+    display: none;
+    color: var(--bg-boton-azul);
+    background-color: transparent;
+    border: 1px solid var(--bg-boton-azul);
+    padding: 14px;
+}
+
+.box-image__input--image {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 32px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: inherit;
+    display: block; 
+    z-index: 3;
+}
+
+.box-image__imagen-cargada {
+    display: none;
+    border: none;   
+    outline: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+
+}
+
+.box-image__imagen-cargada--visible {
+    display: block;
+}
+
+.agregar-producto__boton {
+    background-color: var(--bg-boton-azul);
+    /* box-shadow: 2px 2px 2px rgba(10, 10, 10, 0.5); */
+    color: var(--texto-blanco-boton);
+}
+
+.agregar-producto__boton:hover {
+    cursor: pointer;
+}
+
+.agregar-producto__boton--enabled {
+    background-color: var(--bg-boton-azul);
+}
+
+.agregar-producto__boton--enabled:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}

@@ -1,0 +1,42 @@
+
+.bloque__productos-similares {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.item-seleccionado__imagen {
+    object-fit: cover;
+    height: 60vw;
+    width: 100%;
+}
+
+.item-seleccionado__info, .productos-similares {
+    margin: 0 1rem;
+}
+
+.item-seleccionado__nombre {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 1rem 0 0;
+}
+
+.item-seleccionado__precio {
+    margin: 0.5rem 0 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.item-seleccionado__descripcion {
+    margin: 0.5rem 0 0;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.productos-similares__titulo {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 2rem 0 1rem;
+}

@@ -1,0 +1,164 @@
+.menu {
+   background-color: var(--bg-blanco);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 4.5rem;
+   margin: 0;
+   padding: 0 10px;
+   width: 100%;
+}
+
+.menu__logo {
+   text-decoration: none;
+   height: auto;
+   display: flex;
+   align-items: center;
+   width: 26%;
+   min-width: 95px;
+}
+
+.menu__logo--joystick {
+   height: 16px;
+   margin-right: 3px;
+   width: auto;
+}
+
+.menu__logo--alura {
+   height: 11px;
+   width: auto;
+}
+
+.menu__logo--geek {
+   height: 11px;
+   width: auto;
+}
+
+/* ====      buscador     ==== */
+
+.menu__input-buscador {
+   border: none;
+   outline: none;
+   background-color: transparent;
+   display: none;
+   font-size: 14px;
+   line-height: 16px;
+   width: 100%;
+   color: var(--texto-gris-mas-claro);
+}
+
+.menu_boton {
+   background-image: url(../img/lupa.svg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 14px;
+   background-size: auto;
+   background-color: transparent;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   left: 0px;
+   top: -3px;
+   border: none;
+   border-radius: 20px;
+}
+
+.menu_boton:hover {
+   cursor: pointer;
+}
+
+.menu__caja-busqueda:hover .menu_boton {
+   left: auto;
+   right: 10px;
+   top: 5px;
+}
+
+.menu__caja-busqueda {
+   background-color: transparent;
+   border-radius: 20px;
+   height: auto;
+   padding: 10px;
+   position: relative;
+   width: 25px;
+   transition: width 0.5s ease-in-out;
+}
+
+.menu__caja-busqueda:hover {
+   background-color: var(--bg-gris);
+   width: 100%;
+} 
+
+ .menu__caja-busqueda:hover .menu__input-buscador {
+   display: inline-block;
+   width: 100%;
+} 
+
+.mostar-form {
+   background-color: var(--bg-gris);
+   width: 100%;
+}
+
+
+.menu__caja-busqueda:hover .menu__input-buscador::placeholder {
+   color: var(--texto-gris-mas-claro);
+}
+
+.caja-busqueda__lista {
+   display: block;
+   position: absolute;
+   
+   list-style: none;
+   border-radius: 5px;
+   margin: 0;
+   max-height: 200px;
+   max-width: 300px;
+   z-index: 10;
+   background-color: var(--bg-blanco);
+   opacity: 0.9;
+}
+
+.caja-busqueda__list-item {
+   
+   display: block;
+   color: var(--texto-gris);
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+li.active {
+   color: var(--bg-gris);
+   background: var(--bg-boton-azul);;
+}
+
+.caja-busqueda__list-item:hover {
+   cursor: pointer;
+   background-color: var(--bg-boton-azul);
+}
+
+.caja-busqueda__list-item:nth-of-type(n+ 5){        
+   display: none;              
+}
+
+
+
+/* ========  boton login  ============ */
+
+.menu__login {
+   display: block;
+   width: 35%;
+   height: auto;
+   margin-right: 10px;
+}
+
+.menu__login-boton {
+   color: var(--texto-azul);
+   background-color: transparent;
+   border: 1px solid var(--bg-boton-azul);
+   display: inline-block;
+   width: 100%;
+   text-align: center;
+}
+
+.menu__login-boton--invisible {
+   display: none;
+}

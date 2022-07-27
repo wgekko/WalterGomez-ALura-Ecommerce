@@ -1,0 +1,44 @@
+
+.info__quienes-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.info__logo {
+   text-decoration: none;
+   height: auto;
+   display: flex;
+   align-items: center;
+   margin: 1rem auto;
+}
+
+.info__logo-enlace {
+   text-decoration: none;
+   display: inline-block;
+   width: auto;
+}
+ 
+ .info__logo--joystick {
+    margin-right: 3px;
+    width: 40px;
+    vertical-align:bottom;
+ }
+ 
+ .info__logo--alura {
+    width: 60px;
+ }
+ 
+ .info__logo--geek {
+    width: 60px;
+ }
+ 
+ .info__enlace {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2rem;
+ }
+
+

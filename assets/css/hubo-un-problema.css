@@ -1,0 +1,13 @@
+
+.seccion-problema {
+
+    height: 10rem;
+    width: 100%;
+}
+
+.seccion-problema__texto {
+    margin: 2rem 7.5vw;
+}
+.seccion-problema__boton {
+    margin: 0rem 7.5vw;
+}

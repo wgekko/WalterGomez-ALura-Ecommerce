@@ -1,0 +1,30 @@
+
+.contacto__titulo {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.contacto__boton--disabled {
+   background-color: var(--bg-boton-azul);
+   box-shadow: 2px 2px 2px rgba(10,10,10, 0.5);
+   color: var(--texto-blanco-boton);
+}
+
+.contacto__boton--disabled:hover {
+ cursor: pointer;
+}
+
+.contacto__boton--enabled:hover {
+ cursor: pointer;
+}
+
+.contacto__boton--enabled{
+ background-color: var(--bg-boton-azul);
+}
+
+.contacto__boton--enabled:active {
+transform: translate(2px,2px);
+box-shadow: none;
+}
+

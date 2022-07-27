@@ -1,0 +1,94 @@
+.pantalla-dialogo {
+    display: none;    /* Hidden by default */
+    position: fixed;      /* Stay in place */
+    z-index: 1;    /* Sit on top */
+    padding-top: 100px;    /* Location of the box */
+    
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pantalla-dialogo--enabled {
+    display: block;
+}
+
+.pantalla-dialogo--exito--enabled {
+    display: block;
+}
+
+
+/* Add Animation */
+.caja-dialogo {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+
+.borrar-producto__boton {
+    display: block;
+    background-color: var(--bg-boton-azul);
+    margin: 2rem auto;
+}
+
+.caja-dialogo {
+    background-color: var(--bg-blanco);
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+    width: 80vw;
+    height: 8rem;
+    z-index: 1;
+    box-shadow: 20px 20px 10px black;
+}
+
+.caja-dialogo--disabled {
+    display: none;
+}
+
+.caja-dialogo__texto {
+    text-align: center;
+}
+
+.caja-dialogo__botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.caja-dialogo__boton {
+    background-color: var(--bg-boton-azul);
+    width: 20vw;
+    margin: auto;
+}
+
+.mensaje-espera {
+    display: none;
+    background-color: transparent;
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+    text-align: center;
+    z-index: 1;
+    color: var(--texto-blanco);
+    width: 80vw;
+}
+
+.mensaje-espera--enabled {
+    display: block;
+}
+

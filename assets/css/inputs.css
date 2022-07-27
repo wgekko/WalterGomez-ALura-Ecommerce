@@ -1,0 +1,266 @@
+.input-container {
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.input {
+    color: var(--texto-gris);
+    caret-color: var(--texto-azul-boton);
+    background-color: var(--bg-blanco);
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid var(--bg-boton-azul);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+}
+
+.input::placeholder {
+    visibility: hidden;
+    color: var(--texto-gris-mas-claro);
+    opacity: 0;
+}
+
+.input:-ms-input-placeholder {
+    visibility: hidden;
+    color: var(--texto-gris-mas-claro);
+    opacity: 0;
+}
+
+.input::-webkit-input-placeholder {
+    visibility: hidden;
+    color: var(--texto-gris-mas-claro);
+    opacity: 0;
+}
+
+
+.input:focus {
+    outline: none;
+}
+
+.input-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    transition: all 0.25s;
+    color: var(--texto-gris-mas-claro);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.input:not(:placeholder-shown)+.input-label,
+.input:focus+.input-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+
+    color: var(--texto-gris-mas-claro);
+}
+
+/* ===== input select ======= */
+
+.agregar-producto__input-container--select {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.agregar-producto__label {
+    display: inline-block;
+    flex-grow: 2;
+    width: auto;
+
+}
+
+.agregar-producto__input-select {
+    display: inline-block;
+    flex-grow: 8;
+    width: auto;
+
+
+}
+
+
+
+/* ========= barra expandible =============== */
+
+
+.input__bar {
+    position: relative;
+    display: block;
+    top: -2px;
+    width: 100%;
+}
+
+.input__bar:before,
+.input__bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    background: var(--texto-azul-boton);
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+}
+
+.input__bar:before {
+    left: 50%;
+}
+
+.input__bar:after {
+    right: 50%;
+}
+
+.input:focus~.input__bar:before,
+.input:focus~.input__bar:after {
+    width: 50%;
+}
+
+
+/* =============    inputs invalidos    ============= */
+
+
+.message-error {
+    display: block;
+    visibility: hidden;
+    height: 1rem;
+    margin-top: -2px;
+    margin-bottom: 2px;
+    color: var(--warning-color);
+    border: none;
+    font-size: 12px;
+    padding-left: 0.5rem;
+}
+
+.input__invalid {
+    color: var(--warning-color);
+}
+
+.input__invalid .message-error {
+    visibility: visible;
+}
+
+.input__invalid .input {
+    border-bottom: 2px solid var(--warning-color);
+
+}
+
+.input__invalid .input__bar:before,
+.input__invalid .input__bar:after {
+    background: var(--warning-color);
+}
+
+
+.input__invalid .textarea__bar:before,
+.input__invalid .textarea__bar:after {
+    background: var(--warning-color);
+}
+
+
+
+
+/* ========================= textarea ============================= */
+
+
+.textarea-container {
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 0rem;
+}
+
+.textarea {
+    height: 5.5rem;
+    resize: none;
+}
+
+
+.textarea::placeholder {
+    visibility: hidden;
+    color: var(--texto-gris-mas-claro);
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.textarea-label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    color: var(--texto-gris-mas-claro);
+    font-size: 12px;
+    font-weight: 400;
+    transition: all 0.25s;
+}
+
+
+.textarea:focus+.textarea-label {
+    /* problema del texto flotante resuelto separando esta clase de la de abajo */
+    font-size: 0.875rem;
+    /* estaban en la misma linea separados por una coma */
+    top: 0.25rem;
+    transition: all 0.25s;
+    color: var(--texto-gris-mas-claro);
+}
+
+.textarea:not(:placeholder-shown)+.textarea-label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+    color: var(--texto-gris-mas-claro);
+}
+
+
+
+
+/* ========= barra expandible =============== */
+
+
+.textarea__bar {
+    position: relative;
+    display: block;
+    top: -7px;
+    width: 100%;
+}
+
+  /* =====   para aplicar estilo solo en Firefox   ===== */
+@-moz-document url-prefix() {
+    .textarea__bar {
+        top: -3px;
+    }
+}
+
+.textarea__bar:before,
+.textarea__bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    background: var(--texto-azul-boton);
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+}
+
+.textarea__bar:before {
+    left: 50%;
+}
+
+.textarea__bar:after {
+    right: 50%;
+}
+
+.textarea:focus~.textarea__bar:before,
+.textarea:focus~.textarea__bar:after {
+    width: 50%;
+}

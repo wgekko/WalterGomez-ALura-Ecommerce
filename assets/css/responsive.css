@@ -1,0 +1,489 @@
+@media screen and (max-width: 400px) {
+    .banner__titulo {
+        font-size: 20px;
+    }
+
+    .banner__descripcion {
+        font-size: 12px;
+    }
+
+    .banner__container {
+        margin: 2rem 3vw;
+    }
+
+    .todos-los-productos__boton {
+        padding: 10px 8px;
+    }
+
+    .caja-dialogo {
+        top: 50vh;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .banner__container {
+        margin: 2rem 4vw;
+    }
+
+    .banner__titulo {
+        font-size: 42px;
+        margin: 10px 0;
+        line-height: 32px;
+    }
+
+    .banner__descripcion {
+        font-size: 18px;
+        margin: 10px 0px;
+        line-height: 22px;
+    }
+
+    .banner__boton {
+        font-size: 16px;
+        line-height: 24px;
+        width: 9rem;
+    }
+
+    .menu {
+        padding: 0 2%;
+        height: 5rem;
+    }
+
+    .productos {
+        padding: 1rem 4vw 1rem;
+    }
+
+    .grilla {
+        grid-template-columns: 44vw 44vw;
+        grid-gap: 4vw;
+    }
+
+    .bloque__informacion {
+        padding: 1rem 4vw 2rem;
+    }
+
+    .textarea__bar {
+        top: -6px;
+    }
+
+    /* =====   para aplicar estilo solo en Firefox   ===== */
+    @-moz-document url-prefix() {
+        .textarea__bar {
+            top: -3px;
+        }
+    }
+
+    .todos-los-productos__boton {
+        margin-top: 20px;
+        padding: 14px 16px;
+    }
+}
+
+
+/* ===========  min-width: 768px =========== */
+
+@media screen and (min-width: 768px) {
+
+    .banner__container {
+        margin: 2rem 3.5vw;
+    }
+
+    .banner__titulo {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .banner__descripcion {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .banner__boton {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .menu {
+        height: 5.5rem;
+        padding: 0 2%;
+    }
+
+    .menu__logo {
+        order: 1;
+        width: 15%;
+    }
+
+    .menu__caja-busqueda {
+        order: 2;
+    }
+
+    .menu__login {
+        order: 3;
+
+    }
+
+    .menu__logo--joystick {
+        height: 24px;
+    }
+
+    .menu__logo--alura {
+        height: 18px;
+    }
+
+    .menu__logo--geek {
+        height: 18px;
+    }
+
+    .menu__caja-busqueda {
+        background-color: var(--bg-gris);
+        width: 35%;
+    }
+
+    .menu__input-buscador::placeholder {
+        color: var(--texto-gris-mas-claro);
+    }
+
+    .menu__caja-busqueda:hover {
+        width: 35%;
+    }
+
+    .menu__caja-busqueda:hover .menu__input-buscador {
+        width: 100%;
+    }
+
+    .menu__input-buscador {
+        display: block;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .menu_boton {
+        left: auto;
+        right: 10px;
+        top: 5px;
+    }
+
+    .menu__login {
+        display: block;
+        width: 24%;
+    }
+
+    /* ======= banner   768px  ========== */
+
+    .banner {
+        height: 45vw;
+    }
+
+
+    /* ======= seccion productos   768px  ========= */
+
+    .productos {
+        padding: 1rem 3.5vw 1rem;
+    }
+
+    .productos__encabezado {
+        margin-top: 1rem;
+    }
+
+    .grilla {
+        grid-template-columns: 21vw 21vw 21vw 21vw;
+        grid-gap: 3vw;
+    }
+
+    .item__imagen {
+        height: 21vw;
+    }
+
+    .productos__ver-todo {
+        font-size: 16px;
+    }
+
+    .productos__ver-todo--flecha {
+        height: 16px;
+    }
+
+    /* ============= seccion productos-similares   768px  ==================== */
+
+    .bloque__productos-similares {
+        margin: 0;
+    }
+
+    .item-seleccionado {
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        margin: 2rem 3.5vw 0;
+    }
+
+    .item-seleccionado__imagen {
+        margin: 0rem;
+        height: 21vw;
+        width: 40%;
+    }
+
+    .item-seleccionado__nombre {
+        margin: 0;
+    }
+
+    .item-seleccionado__info {
+        margin: 0 0 0 1rem;
+        width: 60%;
+    }
+
+    .productos-similares {
+        margin: 0;
+    }
+
+
+    /* ======= seccion informacion  768px  ========= */
+
+
+    .bloque__informacion {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 3.5vw;
+    }
+
+    .info__quienes-somos {
+        align-items: flex-start;
+        width: 40%;
+        padding: 0;
+    }
+
+    .info__contacto {
+        width: 60%;
+    }
+
+    .info__logo {
+        margin: 1rem 0;
+    }
+
+    .info__enlace {
+        text-align: left;
+        line-height: 2.5rem;
+    }
+
+    .contacto__textarea-container {
+        margin-bottom: 0;
+    }
+
+    .todos-los-productos__encabezado {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 14px 0;
+    }
+
+    .todos-los-productos__boton {
+        margin: 0;
+        padding: 14px 0;
+        width: 20vw;
+    }
+
+    /* ============seccion agregar productos  768px  ===================== */
+
+    .img-container__box-image {
+        width: 35%;
+    }
+
+    .agregar-producto__img-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .box-image__texto--movil {
+        display: none;
+    }
+
+    .box-image__texto--tablet {
+        display: block;
+        top: 50%;
+    }
+
+    .img-container__or {
+        display: block;
+    }
+
+
+    .img-container__boton {
+        display: block;
+    }
+
+    .box-image__icono {
+        top: 20%;
+        background-image: url(../img/icono-subir-img.svg);
+    }
+
+    .agregar-producto__boton {
+        width: 100%;
+        padding: 16px;
+    }
+
+    /* seccion borrar producto 768px */
+
+    .caja-dialogo {
+        width: 60vw;
+        left: 20vw;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .menu {
+        justify-content: space-between;
+        height: 6rem;
+        padding: 0 7%;
+    }
+
+    .menu__login-boton {
+        padding: 14px;
+    }
+
+    .menu__logo--joystick {
+        height: 30px;
+    }
+
+    .menu__logo--alura {
+        height: 20px;
+    }
+
+    .menu__logo--geek {
+        height: 20px;
+    }
+
+    .menu__caja-busqueda {
+        margin-left: 0px;
+        margin-right: 16%;
+    }
+
+    .banner {
+        height: 28vw;
+    }
+
+    .banner__boton {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px 0;
+    }
+
+    .banner__container {
+        margin: 2rem 7.5vw;
+    }
+
+    .item:nth-of-type(n+ 5) {
+        /* n+ 5  ===>  selecciona a partir del 5to elemento de   */
+        display: block;
+        /*    clase item para no mostrar los items  */
+    }
+
+    .productos {
+        padding: 2rem 7.5vw 1rem;
+    }
+
+    .grilla {
+        grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
+        grid-gap: 2vw;
+    }
+
+    .item__imagen {
+        height: 12.5vw;
+    }
+
+    /* ============= seccion productos-similares  1024px  ==================== */
+
+    .bloque__productos-similares {
+        margin: 0 7.5vw;
+    }
+
+    .item-seleccionado {
+        align-items: center;
+        margin: 4rem 0;
+    }
+
+    .item-seleccionado__imagen {
+        margin: 0rem;
+        height: 30vw;
+        width: 50%;
+    }
+
+    .item-seleccionado__nombre {
+        font-weight: 500;
+        font-size: 52px;
+    }
+
+    .item-seleccionado__precio {
+        margin: 2rem 0 0;
+    }
+
+    .item-seleccionado__descripcion {
+        font-size: 16px;
+    }
+
+    .item-seleccionado__info {
+        margin: 0 0 0 1rem;
+        width: 50%;
+    }
+
+    .productos--similares {
+        padding: 0;
+    }
+
+    /* =============== bloque informacion  1024px  =================== */
+
+    .bloque__informacion {
+        padding: 3rem 7.5vw;
+    }
+
+    .info__contacto {
+        width: 50%;
+    }
+
+    .info__quienes-somos {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .info__logo {
+        width: 50%;
+    }
+
+    .info__container-enlaces {
+        width: 50%;
+
+    }
+
+    .login__titulo {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 0 30px;
+    }
+
+    .login__input {
+        width: 420px;
+        padding: 20px 20px;
+    }
+
+    .login__boton-entrar {
+        font-size: 16px;
+        padding: 20px 190px;
+        width: 420px;
+    }
+
+
+    /* =========  seccion agregar productos  1024px  =============== */
+
+    .agregar-producto {
+        padding: 3rem 28.5vw;
+    }
+
+    .img-container__box-image {
+        width: 50%;
+    }
+
+    .agregar-producto__img-container {
+        justify-content: space-between;
+    }
+
+}

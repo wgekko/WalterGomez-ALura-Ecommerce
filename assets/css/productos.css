@@ -1,0 +1,121 @@
+.bloque__productos{
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+ }
+
+ .bloque__productos--invisible {
+     opacity: 0;
+ }
+ .bloque__productos--disabled {
+    display: none;
+}
+
+.productos {
+    display: block;
+    padding: 0.5rem 3vw 2rem;
+}
+
+.productos__encabezado {
+    display: flex;
+    justify-content: space-between;
+    line-height: 26px;
+    margin: 1rem 0;
+}
+
+.productos__titulo {
+    color: var(--texto-gris);
+    font-size: 22px;
+    font-weight: 700;   
+}
+
+.productos__titulo--link {
+    text-decoration: none;
+}
+
+
+.productos__ver-todo {
+    color: var(--texto-azul);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.productos__ver-todo--flecha {
+    height: 14px;
+    vertical-align: middle;
+}
+
+
+.grilla {
+    display: grid;
+    grid-template-columns: 45.5vw 45.5vw;
+    grid-template-rows: auto;
+    grid-gap: 3vw; 
+}
+
+.item{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* overflow: auto; */
+
+}
+
+/* n+ 5  ===>  selecciona a partir del 5to elemento de   */
+/*    clase item para no mostrar los items  */
+
+.item:nth-of-type(n+ 5){        
+    display: none;              
+}
+
+.item__imagen {    
+    height: 45.5vw;  /* igual que el width de la columna  */
+    width: 100%;
+    border-style: none;
+    border: 0;
+    object-fit: cover;
+    display: block;
+}
+
+.item__nombre {
+    margin: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item__precio {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.item__enlace {
+    color: var(--texto-azul);
+    margin: 8px 0;
+    text-decoration: none;
+    border: none;
+    border-style: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.item__enlace--editar-borrar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.item__enlace--borrar {
+    background-image: url(../img/trash-can-solid.svg);
+    background-repeat: no-repeat;
+    height: 1rem;
+    width: 1rem;
+}
+
+.item__enlace--editar {
+    background-image: url(../img/pencil-solid.svg);
+    background-repeat: no-repeat;    
+    height: 1rem;
+    width: 1rem;
+}

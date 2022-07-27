@@ -1,0 +1,7 @@
+
+.bloque__informacion {
+    background-color: var(--bg-celeste);
+    margin-top: 2rem;
+    padding: 0 3vw 1.5rem;
+    display: block;
+}
