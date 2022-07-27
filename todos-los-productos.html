@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Alura Geek E-commerce</title>
+    <link rel="icon" type="image/png" href="./assets/img/joystick.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/normalize.css" rel="stylesheet" />
+    <link href="./assets/css/base.css" rel="stylesheet">
+
+
+    <link href="./assets/css/menu.css" rel="stylesheet" />
+    <link href="./assets/css/banner.css" rel="stylesheet" />
+    <link href="./assets/css/productos.css" rel="stylesheet" />
+
+    <link href="./assets/css/bloque-login.css" rel="stylesheet" />
+    <link href="./assets/css/bloque-productos-similares.css" rel="stylesheet" />
+    <link href="./assets/css/bloque-todos-los-productos.css" rel="stylesheet" />
+    <link href="./assets/css/bloque-agregar-producto.css" rel="stylesheet" />
+
+    <link href="./assets/css/bloque-informacion.css" rel="stylesheet" />
+    <link href="./assets/css/info-quienes-somos.css" rel="stylesheet" />
+    <link href="./assets/css/info-contacto.css" rel="stylesheet" />
+    <link href="./assets/css/inputs.css" rel="stylesheet" />
+
+    <link href="./assets/css/footer.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+
+
+</head>
+
+<body id="top">
+    <!----------------------  header  -------------------------->
+    <header class="header seccion">
+        <!-- == menu == -->
+        <nav class="menu">
+
+            <a class="menu__logo home" href="index.html">
+                <img class="menu__logo--joystick" src="./assets/img/joystick.svg" alt="joystick">
+                <img class="menu__logo--alura" src="./assets/img/alura.svg" alt="imagen Alura">
+                <img class="menu__logo--geek" src="./assets/img/geek.svg" alt="imagen Geek">
+            </a>
+
+            <div class="menu__login">
+                <a class="menu__login-boton  boton" id="boton-login" href="login.html">Login</a>
+            </div>
+
+            <form class="menu__caja-busqueda" action="">
+                <input type="text" class="menu__input-buscador" data-tipo-buscador placeholder="Que desea buscar?" autocomplete="off" required>
+                <button class="menu_boton" id="input-boton"></button>
+                <ul class="caja-busqueda__lista" data-lista></ul>
+            </form>
+        </nav>
+    </header>
+
+    <!----------------------  main  -------------------------->
+    <main class="main">
+
+        <!-- =============== bloque TODOS los productos ================= -->
+        <div class="bloque__todos-los-productos" id="bloque-todos-los-productos">
+            <section class="productos productos--todos-los-productos">
+
+                <div class="productos__encabezado todos-los-productos__encabezado">
+                    <h2 class="productos__titulo">Todos los productos <span class="productos__titulo--categoria" id="categoria-producto"></span></h2>
+                    <a class="boton todos-los-productos__boton" href="./agregar-producto.html" id="boton-agregar-producto">Agregar producto</a>
+                </div>
+
+                <div class="grilla grilla--todos-los-productos" data-tipo-grillaTodosLosProductos>
+                    <!-- <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-02.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-03.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-04.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-05.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-06.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-02.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-02.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-02.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-03.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-04.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-05.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/starwars-06.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-02.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-02.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-01.png"
+                                alt="imagen producto"></a>
+                        <p class="item__nombre">Producto XYZ</p>
+                        <p class="item__precio">$ 60.00</p>
+                        <a class="item__enlace" href="#">Ver producto</a>
+                    </div> -->
+
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ===================  seccion informacion  =============================== -->
+
+        <div class="bloque__informacion">
+
+            <div class="info__quienes-somos">
+                <div class="info__logo">
+                    <a class="info__logo-enlace home" href="index.html">
+                        <img class="info__logo--joystick" src="./assets/img/joystick.svg" alt="joystick">
+                        <img class="info__logo--alura" src="./assets/img/alura.svg" alt="imagen Alura">
+                        <img class="info__logo--geek" src="./assets/img/geek.svg" alt="imagen Geek">
+                    </a>
+                </div>
+                <div class="info__container-enlaces">
+                    <a class="info__enlace" href="#">Quienes somos</a>
+                    <a class="info__enlace" href="#">Politica de privacidad</a>
+                    <a class="info__enlace" href="#">Programa de fidelidad</a>
+                    <a class="info__enlace" href="#">Nuestras tiendas</a>
+                    <a class="info__enlace" href="#">Quiero ser franquiciado</a>
+                    <a class="info__enlace" href="#">Anuncie aquí</a>
+                </div>
+            </div>
+            <div class="info__contacto">
+                <h3 class="contacto__titulo">Hable con nosotros</h3>
+                <form class="contacto__formulario" action="">
+
+                    <!--  ========  input name  =========  -->
+                    <div class="input-container">
+                        <input class="input input-contacto" name="name" id="name" type="text" autocomplete="off"
+                            placeholder="Nombre" data-tipo="nombre" required>
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input__bar"></span>
+                        <span class="message-error">Este campo no es valido</span>
+                    </div>
+
+
+                    <!--  ========  input Mensaje  =========  -->
+                    <div class="textarea-container">
+                        <textarea class="textarea input input-contacto" name="mensaje" type="text" rows="4"
+                            autocomplete="off" placeholder="Mensaje" data-tipo="mensaje" required></textarea>
+                        <label class="textarea-label" for="mensaje">Mensaje</label>
+                        <span class="textarea__bar"></span>
+
+                        <span class="message-error">Este campo no es valido</span>
+
+                    </div>
+
+                    <!--  ========  input Submit  =========  -->
+                    <input class="boton contacto__boton--disabled" id="boton-enviar" type="submit" data-submit-contacto
+                        value="Enviar mensaje">
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <!----------------------  footer  -------------------------->
+    <footer class="footer">
+        <a href="#" target="_blank"><img class="footer__img" src="./assets/img/walter-touch-icon.png"></a>
+        <p class="footer__texto"><strong>&nbsp;&nbsp;2022 -&nbsp;&nbsp;Walter Gomez - </strong>&nbsp;&nbsp;FullStack Developer</p>   
+    
+    </footer>
+    <script src="./controllers/todos.los.productos.controller.js" type="module"></script>
+    <script src="./assets/script/todos-los-productos.js" type="module"></script>
+</body>
+
+</html>

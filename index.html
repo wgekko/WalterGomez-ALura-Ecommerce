@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Alura Geek-Ecommerce</title>
+    <link rel="icon" type="image/png" href="./assets/img/joystick.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/normalize.css" rel="stylesheet" />
+    <link href="./assets/css/base.css" rel="stylesheet">
+
+
+    <link href="./assets/css/menu.css" rel="stylesheet" />
+    <link href="./assets/css/banner.css" rel="stylesheet" />
+    <link href="./assets/css/productos.css" rel="stylesheet" />
+
+    <link href="./assets/css/bloque-login.css" rel="stylesheet" />
+    <link href="./assets/css/bloque-productos-similares.css" rel="stylesheet" />
+    <link href="./assets/css/bloque-todos-los-productos.css" rel="stylesheet" />
+    <link href="./assets/css/bloque-agregar-producto.css" rel="stylesheet" />
+
+    <link href="./assets/css/bloque-informacion.css" rel="stylesheet" />
+    <link href="./assets/css/info-quienes-somos.css" rel="stylesheet" />
+    <link href="./assets/css/info-contacto.css" rel="stylesheet" />
+    <link href="./assets/css/inputs.css" rel="stylesheet" />
+
+    <link href="./assets/css/footer.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link  href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body id="top">
+    <!----------------------  header  -------------------------->
+    <header class="header seccion">
+        <!-- == menu == -->
+        <nav class="menu">
+
+            <a class="menu__logo home" href="index.html">
+                <img class="menu__logo--joystick" src="./assets/img/joystick.svg" alt="joystick">
+                <img class="menu__logo--alura" src="./assets/img/alura.svg" alt="imagen Alura">
+                <img class="menu__logo--geek" src="./assets/img/geek.svg" alt="imagen Geek">
+            </a>
+
+            <div class="menu__login">
+                <a class="menu__login-boton  boton" id="boton-login" href="./login.html">Login</a>
+            </div>
+
+            <form class="menu__caja-busqueda" action="" >
+                <input type="text" class="menu__input-buscador" data-tipo-buscador placeholder="Que desea buscar?" autocomplete="off" required>
+                <button class="menu_boton" id="input-boton"></button>
+                <ul class="caja-busqueda__lista" data-lista></ul>
+            </form>
+
+
+        </nav>
+        <!----------------------  banner  -------------------------->
+        <div class="banner" id="bloque-banner">
+            <div class="banner__container">
+                <h2 class="banner__titulo">Febrero Promocional</h2>
+                </h2>
+                <p class="banner__descripcion">Productos seleccionados con 33% de descuento</p>
+                <a href="#seccion-consolas" id="boton-ver-consolas">
+                    <button class="banner__boton boton">Ver Consolas</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!----------------------  main  -------------------------->
+    <main class="main">
+
+        <!-- =============== bloque productos ================= -->
+        <div class="bloque__productos" id="bloque-productos">
+
+            <section class="productos productos--starwars" >
+
+                <div class="productos__encabezado">
+                    <h2 class="productos__titulo"><a class="productos__titulo--link" href="./todos-los-productos.html?categoria=starwars">Starwars</a></h2>
+                    <a href="./login.html" class="productos__ver-todo">Ver todo <img class="productos__ver-todo--flecha"
+                            src="./assets/img/flecha.svg"></a>
+                </div>
+
+                <div class="grilla" data-tipo-grilla-starwars>
+                  
+                </div>
+            </section>
+
+            <!-- ===================  seccion consolas  =============================== -->
+
+            <section class="productos productos--consolas" id="seccion-consolas">
+
+                <div class="productos__encabezado">
+                    <h2 class="productos__titulo"><a class="productos__titulo--link" href="./todos-los-productos.html?categoria=consolas">Consolas</a></h2>
+                    <a href="./login.html" class="productos__ver-todo">Ver todo <img class="productos__ver-todo--flecha"
+                            src="./assets/img/flecha.svg"></a>
+                </div>
+
+                <div class="productos__grilla-container">
+
+                    <div class="grilla" data-tipo-grilla-consolas>
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-01.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-02.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-03.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-04.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-05.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/consolas-06.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================  seccion diversos  =============================== -->
+
+            <section class="productos productos--diversos">
+
+                <div class="productos__encabezado">
+                    <h2 class="productos__titulo"><a class="productos__titulo--link" href="./todos-los-productos.html?categoria=diversos">Diversos</a></h2>
+                    <a href="./login.html" class="productos__ver-todo">Ver todo <img class="productos__ver-todo--flecha"
+                            src="./assets/img/flecha.svg"></a>
+                </div>
+
+                <div class="productos__grilla-container">
+                    <div class="grilla" data-tipo-grilla-diversos>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/diversos-01.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/diversos-02.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/diversos-03.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/diversos-04.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/diversos-05.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"><img class="item__imagen" src="./assets/img/productos/diversos-06.png"
+                                    alt="imagen producto"></a>
+                            <p class="item__nombre">Producto XYZ</p>
+                            <p class="item__precio">$ 60.00</p>
+                            <a class="item__enlace" href="#">Ver producto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- ===================  seccion informacion  =============================== -->
+
+        <div class="bloque__informacion">
+
+            <div class="info__quienes-somos">
+                <div class="info__logo">
+                    <a class="info__logo-enlace home" href="index.html">
+                        <img class="info__logo--joystick" src="./assets/img/joystick.svg" alt="joystick">
+                        <img class="info__logo--alura" src="./assets/img/alura.svg" alt="imagen Alura">
+                        <img class="info__logo--geek" src="./assets/img/geek.svg" alt="imagen Geek">
+                    </a>
+                </div>
+                <div class="info__container-enlaces">
+                    <a class="info__enlace" href="#">Quienes somos</a>
+                    <a class="info__enlace" href="#">Politica de privacidad</a>
+                    <a class="info__enlace" href="#">Programa de fidelidad</a>
+                    <a class="info__enlace" href="#">Nuestras tiendas</a>
+                    <a class="info__enlace" href="#">Quiero ser franquiciado</a>
+                    <a class="info__enlace" href="#">Anuncie aquí</a>
+                </div>
+            </div>
+            <div class="info__contacto">
+                <h3 class="contacto__titulo">Hable con nosotros</h3>
+                <form class="contacto__formulario" action="">
+
+                    <!--  ========  input name  =========  -->
+                    <div class="input-container">
+                        <input class="input input-contacto" name="name" id="name" type="text" autocomplete="off"
+                            placeholder="Nombre" data-tipo="nombre" required>
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input__bar"></span>
+                        <span class="message-error">Este campo no es valido</span>
+                    </div>
+
+
+                    <!--  ========  input Mensaje  =========  -->
+                    <div class="textarea-container">
+                        <textarea class="textarea input input-contacto" name="mensaje" type="text" rows="4"
+                            autocomplete="off" placeholder="Mensaje" data-tipo="mensaje" required></textarea>
+                        <label class="textarea-label" for="mensaje">Mensaje</label>
+                        <span class="textarea__bar"></span>
+
+                        <span class="message-er404 ror">Este campo no es valido</span>
+
+                    </div>
+
+                    <!--  ========  input Submit  =========  -->
+                    <input class="boton contacto__boton--disabled" id="boton-enviar" type="submit" data-submit-contacto
+                        value="Enviar mensaje">
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <!----------------------  footer  -------------------------->
+    <footer class="footer">
+        <a href="#" target="_blank"><img class="footer__img" src="./assets/img/walter-touch-icon.png"></a>
+        <p class="footer__texto"><strong>&nbsp;&nbsp;2022 -&nbsp;&nbsp;Walter Gomez - </strong>&nbsp;&nbsp;FullStack Developer</p>   
+    
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./controllers/lista.productos.controller.js" type="module"></script>
+    <script src="./assets/script/script.js" type="module"></script>
+</body>
+
+</html>
