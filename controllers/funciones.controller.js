@@ -229,11 +229,5 @@ export const darFormatoMoneda = (input) => {
 
     input.value = numero;        // cambia el valor del input precio, para que se vea como un monto de dinero.
 
-
-    // instrucciones para ver el numero real, en numero flotante. Ej 52,43
-
-    // let n = numero.replace(/[\$\.]/g, "");      // elimina los signos $ y .   
-    // console.log("numero sin signos : ", n);
-    // n = n.replace(/[\,]+/g, ".");            // cambia la coma por el punto para convertir el numero en numero flotante        
-    // console.log("numero flotante" , parseFloat(n));
+   
 }
