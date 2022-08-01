@@ -38,7 +38,7 @@
       "id": "c14ad3b3-338b-49d9-a952-a6d5f4e8ae30",
       "categoria": "consolas",
       "descripcion": "descripción del producto",
-      "img": "https://res.cloudinary.com/imagenes-cloudinary/image/upload/v1651857103/mt6nxdol6rroaei5ynyu.png"
+      "img": "/assets/img/productos/consolas-05.png"
     },
     {
       "nombre": "Producto XYZ",
