@@ -28,7 +28,7 @@ const buscarProductos = async (prod_buscado) => {
 
     if (prod_buscado == "") {
         let element = document.createElement("p");
-                element.innerHTML = "Error en la busqueda.";
+                element.innerHTML = "OOPPPSSSS.... Producto no encontrado, si desea volver a realizar una busqueda, puede retornar a inicio ";
                 grilla_resultados.appendChild(element);
     } else {
         prod_buscado = prod_buscado.trim();
